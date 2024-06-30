@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script></head>
+<body>
+
+<header th:insert="~{blocks/header}"></header>
+
+<div class="container py-4">
+    <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">Main information</h1>
+            <p class="col-md-8 fs-4">This is a simple learning project that demonstrates basic skills in working with several major Java developer frameworks.
+                It is a website where users can publish their own articles of small content, share any interesting information and find one that will be useful to them.</p>
+            <a target="_blank" class="btn btn-primary btn-lg" th:href="@{https://github.com/Astarell}">Check my other works</a>
+        </div>
+    </div>
+
+    <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+            <div class="h-100 p-5 text-bg-dark rounded-3">
+                <h2>Reflection</h2>
+                <p>Although the project does not stand out for the special beauty of the user interface, it took a lot of time to make it at least look good, which Bootstrap helped a lot (and also created a lot of problems)</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+                <h2>Technologies</h2>
+                <p>The following technologies were used in the project:<br>
+                    - Spring Framework: Spring Boot, Spring Core, Spring Data JPA, Spring Security<br>
+                    - Maven<br>
+                    - Hibernate ORM<br>
+                    - PostgreSQL<br>
+                    - Web template engine ‘Thymeleaf’<br>
+                    - Bootstrap</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer th:insert="~{blocks/footer}"></footer>
+
+</body>
+</html>
